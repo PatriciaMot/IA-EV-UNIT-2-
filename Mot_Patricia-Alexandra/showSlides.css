@@ -1,0 +1,121 @@
+/*editarile casetei de la slideshow*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+/*fundalul este de culoare #5a7684,iar spatiul lasat in toate cele 4 directii este de 5% sau 2%*/
+.slideshow-container{
+	background-color:#5a7684;
+padding-left:5%;
+padding-right:5%;
+padding-top: 5%;
+padding-bottom:2%;
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+/*in afara de titlu, tot documentul are fontul de tipul Times New Romans*/
+body{background-color: white;}/* fundalul alb*/
+/* la h1 si h2 setez culoarea(#a3a3c2,#2d5986) si stilul(Arial, italic, bold) dorit pentru font*/
+h1 { font-family: "Arial";
+	color: #a3a3c2;
+		font-weight: bold;}
+h2{color: #2d5986;
+text-decoration: italic;
+	}
+	/*setez culoarea fontului pentru lista ordonata*/
+ol{color: black;}
+
+/*setez dimensiunea(100%) primului tabel, culoarea de fundal(#ffb380), dimensiunea(6px) si culoarea bordurii(solid black) */
+.table1{ width: 100%;
+		background-color:  #ffb380;
+		border: 6px solid black;
+		border-collapse: collapse;
+		}
+		
+/*setez culoarea(#0059b3) si stilul bordurii(double) celui de-al doilea tabel*/
+.table2{border-color: #0059b3;
+ border-style: double;}
+
+/* setez marginea(5px-stanga), culoarea de fundal(#ccebff), tipul de bordura(3px #b3003b) si distanta pe care o lasa imaginile pana la marginea celui de-al treilea tabel(10px)*/
+.table3{padding-left: 10px;
+	margin-left: 5px;
+		width: 100%;
+		background-color: #ccebff;
+		border: 3px #b3003b solid ;
+		border-collapse: collapse;
+		}
+		
+/*setez culoarea fundalului celui de-al patrulea tabel(#435E70)*/
+.table4{background-color: #435E70;}
+
+/*setez marginile(stanga-45px; dreapta-45px) si tipul fondului din prima dimensiune(Times New Roman)*/
+.diviziune1{ margin-left: 45px;
+	margin-right: 45px;
+	font-family: "Times New Roman";}
+	
+/*setez marginile(stanga-60px; dreapta-60ps) si tipul fondului din a doua dimensiune(Times New Roman)*/
+.diviziune2{ margin-left: 60px;
+	margin-right: 60px;
+	font-family: "Times New Roman";}
+	
+/*setez marginile(stanga-30px; dreapta-30px) si tipul fondului din a treia dimensiune(Times New Roman)*/
+.diviziune3{margin-left: 30px;
+	margin-right: 30px;
+	font-family: "Times New Roman";}
+	
+/*setez marginile(stanga-60px;dreapta-60px) si tipul fondului din a patra dimensiune*/
+.diviziune4{margin-left: 60px;
+	margin-right: 60px;
+	font-family: "Times New Roman";}
+
+/*setez dimensiunea butonului(280px) si dezactivez bordura*/
+button{ border: none;
+width: 280px;}
+
+/*rotunjesc colturile imaginilor cu 12px*/
+img {border-radius: 12px;}
+
+
